@@ -1,6 +1,6 @@
 
 //cerca una mail 
-const mail = ['stef@mail.it','luca@mail.it','giacomo@mail.it','chiara.mail.it'];
+const mail = ['stef@mail.it','luca@mail.it','giacomo@mail.it','chiara@mail.it'];
 console.log(mail);
 
 //refe
@@ -37,4 +37,16 @@ btn.addEventListener ('click', function() {
         }
     }
 });
+
+
+// generatore di numeri
+
+let gamer = parseInt ( prompt ('inseriscci un numero da 1 a 6') );
+
+if ( (gamer < 1) || (gamer > 6) || isNaN (gamer)  ) {
+    alert('inserimento non valido. assegnazione automatica = 3');
+    gamer = 3;
+}
+console.log(gamer);
+
 
