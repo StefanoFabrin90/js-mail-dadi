@@ -39,10 +39,21 @@ btn.addEventListener ('click', function() {
 });
 
 
-// generatore di numeri
+// generatore di numeri da 1 a 6
 
-const gamer = Math.floor(Math.random ()*5) +1;
-console.log(gamer);
+let gamer = Math.floor(Math.random ()*5) +1;
+// console.log(gamer);
 
 const Computer = Math.floor(Math.random ()*5) +1;
-console.log(Computer);
+// console.log(Computer);
+
+if (gamer > Computer) {
+    document.getElementById('dadi').innerHTML = `ha vinto il gamer ${gamer}`
+    // console.log('hai vinto');
+} else if (gamer < Computer) {
+    document.getElementById('dadi').innerHTML = `ha vinto il pc ${Computer}`
+    // console.log('hai perso');
+} else {
+    document.getElementById('dadi').innerHTML = `pareggio`
+    // console.log('i due numeri sono uguali');
+}
