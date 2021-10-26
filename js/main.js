@@ -42,10 +42,10 @@ btn.addEventListener ('click', function() {
 // generatore di numeri da 1 a 6
 
 let gamer = Math.floor(Math.random ()*5) +1;
-// console.log(gamer);
+console.log(gamer);
 
 const Computer = Math.floor(Math.random ()*5) +1;
-// console.log(Computer);
+console.log(Computer);
 
 if (gamer > Computer) {
     document.getElementById('dadi').innerHTML = `ha vinto il gamer ${gamer}`
