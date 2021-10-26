@@ -41,12 +41,8 @@ btn.addEventListener ('click', function() {
 
 // generatore di numeri
 
-let gamer = parseInt ( prompt ('inseriscci un numero da 1 a 6') );
-
-if ( (gamer < 1) || (gamer > 6) || isNaN (gamer)  ) {
-    alert('inserimento non valido. assegnazione automatica = 3');
-    gamer = 3;
-}
+const gamer = Math.floor(Math.random ()*5) +1;
 console.log(gamer);
 
-
+const Computer = Math.floor(Math.random ()*5) +1;
+console.log(Computer);
